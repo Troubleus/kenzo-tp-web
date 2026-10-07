@@ -1,0 +1,107 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+*{
+    font-family: "Lora", Georgia, serif;
+}
+
+body{
+    color: rgb(248, 236, 173);
+    @media (max-width: 767px){
+        background: url(assets/stars.jpg), rgba(55, 0, 255, 0.55);
+        background-blend-mode: multiply;
+    }
+    @media (min-width: 767px){
+        background: linear-gradient(145deg,rgba(55, 16, 94, 0.65) 0%, rgba(8, 40, 109, 0.65) 100%), url(assets/stars.jpg);
+    }
+    
+}
+
+.bloc{
+    border: 1px solid rgb(81, 46, 134);
+    border-radius: 12px;
+    background: rgba(0, 0, 0,0.4);
+    @media (max-width: 767px){
+        margin: 10px;
+    }
+    @media (min-width: 767px){
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.desc{
+    @media (max-width: 767px){
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    @media (min-width: 767px){
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    font-size: 18px;
+}
+
+.card{
+    border: 1px solid rgb(81, 46, 134);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 12px;
+    width: 300px;
+    background: rgb(21, 9, 31);
+
+}
+
+.card, .card::after ,.card::before{
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card__button{
+    border: 1px solid rgb(81, 46, 134);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0,0.5)
+}
+
+.card__desc{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(248, 236, 173);
+}
+
+.end{
+    @media (max-width: 767px){
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    @media (min-width: 767px){
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    margin-bottom: 10px;
+}
+
+.reset{
+    border-radius: 12px ;
+}
